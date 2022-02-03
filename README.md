@@ -1,4 +1,4 @@
-# D-MOVIE
+# TRIUMPH GYM
 
 TRIUMPH GYM is a responsive website built with HTML5, CSS3/SASS, JS and parcel
 
