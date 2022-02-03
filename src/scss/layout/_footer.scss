@@ -1,0 +1,40 @@
+.footer {
+   background-color: rgb(8, 8, 8);
+   padding: 74px 82px;
+
+   @media screen and (max-width: 992px) {
+      padding: 74px 30px;
+   }
+
+   &__container {
+      display: grid;
+      grid-template-columns: 320px auto;
+      color: var(--white);
+      grid-gap: 20px;
+
+      @media screen and (max-width: 768px) {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   &__nav {
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: 768px) {
+         flex-direction: column;
+         gap: 24px;
+      }
+
+      &--list {
+         li {
+            margin: 10px 0;
+         }
+      }
+   }
+   &__logo {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+   }
+}

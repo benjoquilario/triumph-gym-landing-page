@@ -1,0 +1,29 @@
+@mixin backgroundPeople {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 100%;
+   height: 82vw;
+   max-width: 502px;
+   max-height: 286px;
+   margin: 0 auto;
+   color: var(--white);
+   padding: 0 30px;
+   z-index: 10;
+
+   @media screen and (max-width: 768px) {
+      padding: 0 20px;
+      max-width: 100%;
+   }
+}
+
+@mixin paragraphText {
+   margin-bottom: 12px;
+   font-size: clamp(14px, 1vw, 16px);
+}
