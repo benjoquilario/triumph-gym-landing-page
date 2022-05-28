@@ -1,36 +1,55 @@
 .container {
-   max-width: 100rem;
-   width: 100%;
-   margin: 0 auto;
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .overlay {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(0, 0, 0, 0.5);
-   z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 .visually-hidden {
-   clip: rect(0 0 0 0);
-   border: 0;
-   height: 1px;
-   margin: -1px;
-   overflow: hidden;
-   padding: 0;
-   position: absolute;
-   width: 1px;
+  clip: rect(0 0 0 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .result {
-   position: fixed;
-   top: 30px;
-   left: 0;
-   background: var(--white);
-   color: var(--black);
-   padding: 12px 28px;
-   transform: translateX(-100%);
+  position: fixed;
+  top: 30px;
+  left: 0;
+  background: var(--white);
+  color: var(--black);
+  padding: 12px 28px;
+  transform: translateX(-100%);
+  z-index: 100;
+  transition: transform 350ms ease-in-out;
+
+  &.showForm {
+    transform: translateX(0);
+  }
+}
+
+.skip-to-content {
+  background-color: #fff;
+  font-size: 0.8rem;
+  left: 0;
+  padding: 1.25rem 2.5rem;
+  position: fixed;
+  text-decoration: underline;
+  top: 6.875rem;
+  -webkit-transform: translateX(-12.5rem);
+  transform: translateX(-12.5rem);
+  z-index: 100;
 }
